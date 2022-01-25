@@ -53,14 +53,13 @@ def Ask(contents, showAnswer):
             if usersUnswer == 'q':
                 break
             if answerLetter.lower() == usersUnswer.lower() or showAnswer:
-                counter += 1
                 if not showAnswer:
                     print("\n\033[2;32;40mNice!!!\n")
                     grade += 1
             else:
                 print("\n\033[2;31;40mWrong Answer!!!")
                 print("\033[2;32;40mRight Answer is: %s\n" % answerLetter)
-                continue
+            counter += 1
     if not showAnswer:
         print("\033[2;32;40m Your Grade: %d / 100" % ( (grade*100)/countQuestions ))
     print("\033[2;37;40m")
