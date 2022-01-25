@@ -29,7 +29,7 @@ def Ask(contents, showAnswer):
     countQuestions = len(contents)
     if args.grade:
         grade = 0
-    counter = 1
+    counter = 0
     while counter < countQuestions:
         lines = contents[counter].split("\n")
         answer = ""
