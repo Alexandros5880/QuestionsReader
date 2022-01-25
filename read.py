@@ -30,7 +30,7 @@ def Ask(contents, showAnswer):
     if args.grade:
         grade = 0
     counter = 0
-    while counter < countQuestions:
+    while counter <= countQuestions:
         lines = contents[counter].split("\n")
         answer = ""
         for l in lines:
