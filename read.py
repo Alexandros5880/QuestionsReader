@@ -44,10 +44,13 @@ def Ask(contents, showAnswer):
         print(questions)
         if answer:
             answerLetter = answer[0]
-            usersUnswer = input("Enter your Answer: ")
+            if not showAnswer:
+                usersUnswer = input("Enter your Answer: ")
+            else:
+                usersUnswer = input("Enter for next.")
             if usersUnswer == 'q':
                 break
-            if answerLetter.lower() == usersUnswer.lower():
+            if answerLetter.lower() == usersUnswer.lower() or showAnswer:
                 print("\nNice!!!\n")
                 counter += 1
                 if args.grade:
