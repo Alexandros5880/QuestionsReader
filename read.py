@@ -27,7 +27,7 @@ def ReadFile(str):
     return contents
 
 def Ask(contents, showAnswer):
-    countQuestions = len(contents)-1
+    countQuestions = len(contents)-2
     if not showAnswer:
         grade = 0
     counter = 1
