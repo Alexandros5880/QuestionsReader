@@ -1,3 +1,5 @@
+from colorama import init
+init()
 
 # Pass Flag To Terminal
 import argparse
