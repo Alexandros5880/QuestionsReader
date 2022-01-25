@@ -5,9 +5,9 @@
 
 * Excecution:
     
-        read [-h] -f FILE [-s SPLITCHARACTER] [-a] [-g] 
+        read [-h] -f FILE [-s SPLITCHARACTER] [-a]
         or
-        ./read [-h] -f FILE [-s SPLITCHARACTER] [-a] [-g]
+        ./read [-h] -f FILE [-s SPLITCHARACTER] [-a]
 
 * Required arguments:
     
@@ -18,7 +18,6 @@
         -s SPLITCHARACTER, --split SPLITCHARACTER
                             Enter the split characters of questions
         -a, --answer          Display or not the answer.
-        -g, --grade           Display your grade.
 
 
 #### INSTRUCTIONS:
@@ -30,6 +29,13 @@
 * Opem cmd on files directory and excecute the app.
 * You can put the path of your app on System Variables
 
+
+#### COMMAND EXAMPLE:
+
+    1). read -h   -->  HELP
+    2). read -f ADVANCED.txt  -->  Ask you the questions and give you a grade.
+    3). read -f ADVANCED.txt -a  -->  Show you th answers.
+    4). read -f importances.txt -s "&&&"  -->  Give a special characters tha seperates the questions.
 
 #### FILE EXAMPLE:
 
@@ -318,3 +324,5 @@
     B ...is not a tool to help understand programmers needs.
     C ...can carry out new research to fill in gaps regarding user understanding.
     D* ...is the centerpiece of a software-centered design process.
+
+    &&&

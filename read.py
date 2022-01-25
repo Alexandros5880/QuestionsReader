@@ -8,7 +8,6 @@ optional = parser.add_argument_group('optional arguments')
 required.add_argument("-f", "--file", dest = "file", default = "", help="Enter the file.", required=True)
 optional.add_argument("-s", "--split", dest = "splitcharacter", default = "\n&&&\n", help="Enter the split characters of questions")
 optional.add_argument("-a", "--answer", dest = "answer", default = False, help="Display or not the answer.", action='store_true')
-optional.add_argument("-g", "--grade", dest = "grade", default = False, help="Display or not you grade.", action='store_true')
 args = parser.parse_args()
 
 
@@ -26,10 +25,10 @@ def ReadFile(str):
     return contents
 
 def Ask(contents, showAnswer):
-    countQuestions = len(contents)
-    if args.grade:
+    countQuestions = len(contents)-1
+    if not showAnswer:
         grade = 0
-    counter = 0
+    counter = 1
     while counter <= countQuestions:
         lines = contents[counter].split("\n")
         answer = ""
@@ -41,27 +40,28 @@ def Ask(contents, showAnswer):
             questions = contents[counter].replace("*", "")
         else:
             questions = contents[counter]
+        print("\n\033[2;37;40m%d / %d" % (counter, countQuestions) )
         print(questions)
         if answer:
             answerLetter = answer[0]
             if not showAnswer:
-                usersUnswer = input("Enter your Answer: ")
+                usersUnswer = input("Quit(q), Enter your Answer: ")
             else:
-                usersUnswer = input("Enter for next.")
+                usersUnswer = input("Quit(q), Enter for next.")
             if usersUnswer == 'q':
                 break
             if answerLetter.lower() == usersUnswer.lower() or showAnswer:
-                print("\nNice!!!\n")
                 counter += 1
-                if args.grade:
+                if not showAnswer:
+                    print("\n\033[2;32;40mNice!!!\n")
                     grade += 1
             else:
-                print("\nWrong!!!")
-                print("Right Answer is: %s\n" % answerLetter)
-                if args.grade:
-                    counter += 1
+                print("\n\033[2;31;40mWrong Answer!!!")
+                print("\033[2;32;40mRight Answer is: %s\n" % answerLetter)
                 continue
-    print((grade*100)/countQuestions)
+    if not showAnswer:
+        print("\033[2;32;40m Your Grade: %d / 100" % ( (grade*100)/countQuestions ))
+    print("\033[2;37;40m")
             
 
 
