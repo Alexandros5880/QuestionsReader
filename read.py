@@ -1,26 +1,30 @@
-from colorama import init
-init()
 
 # Pass Flag To Terminal
-import argparse
-parser = argparse.ArgumentParser()
-parser._action_groups.pop()
-required = parser.add_argument_group('required arguments')
-optional = parser.add_argument_group('optional arguments')
-required.add_argument("-f", "--file", dest = "file", default = "", help="Enter the file.", required=True)
-optional.add_argument("-s", "--split", dest = "splitcharacter", default = "\n&&&\n", help="Enter the split characters of questions")
-optional.add_argument("-a", "--answer", dest = "answer", default = False, help="Display or not the answer.", action='store_true')
-args = parser.parse_args()
+def Setup():
+    global args
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser._action_groups.pop()
+    required = parser.add_argument_group('required arguments')
+    optional = parser.add_argument_group('optional arguments')
+    required.add_argument("-f", "--file", dest = "file", default = "", help="Enter the file.", required=True)
+    optional.add_argument("-s", "--split", dest = "splitcharacter", default = "\n&&&\n", help="Enter the split characters of questions")
+    optional.add_argument("-a", "--answer", dest = "answer", default = False, help="Display or not the answer.", action='store_true')
+    args = parser.parse_args()
+    return {'filename' : args.file, 'splitCharacter' : args.splitcharacter, 'showAnswer' : args.answer}
 
 
-
-
-def ReadFile(filename, str):
+# Get Questions from file
+def GetQuestions(filename, str):
     file = open(filename, "r")
     contents = file.read().split(str)
     return contents
 
-def Ask(contents, showAnswer):
+
+# Ask questions on terminal
+def AskQuestionsTerminal(contents, showAnswer):
+    from colorama import init
+    init()
     countQuestions = len(contents)-2
     if not showAnswer:
         grade = 0
@@ -63,8 +67,6 @@ def Ask(contents, showAnswer):
 
 
 if "__main__" == __name__:
-    filename = args.file
-    splitCharacter = args.splitcharacter
-    showAnswer = args.answer
-    contents = ReadFile(filename, splitCharacter)
-    Ask(contents, showAnswer)
+    arguments = Setup()
+    contents = GetQuestions(arguments['filename'], arguments['splitCharacter'])
+    AskQuestionsTerminal(contents, arguments['showAnswer'])
