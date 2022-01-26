@@ -1,0 +1,424 @@
+
+
+2. Which of the following roles DOES NOT belong to Scrum methodology?
+
+A. Product Owner
+B. Scrum Master
+C. Development Team
+D.* Project Manager
+
+
+&&&
+
+3. Which of the following refers to the all activities (directed by policies, organized
+and structured in processes and supporting procedures) that are performed by an
+organization to plan, design, deliver, operate and control information technology
+services offered to customers?
+
+A.* IT Service Management
+B. Agile Development
+C. Project Management
+D. Software Development
+
+
+&&&
+
+
+5. During beta testing, ___________ are most likely to report software bugs.
+
+A.* users
+B. designers
+C. developers
+D. automated tools
+
+
+&&&
+
+
+6. Consider the following statement:
+SELECT prod name, material, item size, SUM(quantity)
+FROM sales
+GROUP By rollup(prod name, material, item size);
+How many groupings are possible in this rollup?
+
+A. 12
+B. 8
+C.* 4
+D. 2
+
+
+&&&
+
+
+7. Assume that we have a <section> element with three <article> elements as
+children. How can we make the <article> elements full-width and layout them
+vertically using flexbox model?
+
+A. section {
+    display: flex;
+    align-items: vertical;
+    justify-content: stretch;
+}
+B. section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+}
+C.* section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+D. section {
+    display: flex;
+    align-items: stretch;
+    justify-content: column nowrap
+}
+
+
+&&&
+
+
+8. In a design context, an information provider class needs to update a set of
+information consumer classes while associated with them in a loosely-coupled
+manner.
+Which design pattern is suitably applicable in this context?
+
+A. Factory
+B.* Observer
+C. Strategy
+D. Abstract Factory
+
+
+&&&
+
+
+9. What is the difference between Factory and Abstract Factory design patterns?
+
+A. The Factory pattern uses the Singleton pattern while Abstract Factory does not
+B. The Abstract Factory pattern produces objects of a product class while Factory
+Pattern provides interface to create a family of related objects
+C.* The Factory pattern produces objects of a product class while Abstract Factory
+Pattern provides interface to create a family of related objects
+D. Nothing, they are the same.
+
+
+&&&
+
+
+10. Which software development process is described in the following sequence?
+Requirement --> Design --> Implementation --> Verification --> Maintenance
+
+A. Agile
+B.* Waterfall
+C. Prototyping
+D. Spiral
+
+
+&&&
+
+
+11. Which of the following design patterns DOES NOT belong to Creational category of
+design patterns?
+
+A. Abstract Factory
+B. Builder
+C. Factory Method
+D.* Observer
+
+
+&&&
+
+
+14. In the context of software object-oriented metrics, which guideline is measured in
+terms of dependencies between units?
+
+A. Write Code Once
+B. Keep Architecture Components Balanced
+C.* Separate Concerns in Modules
+D. Keep Unit Interfaces Small
+
+
+&&&
+
+
+15. Which of the following queries should be used to remove a constraint from a table
+named products ?
+
+A.* ALTER TABLE products DROP CONSTRAINT products_PK;
+B. ALTER TABLE products UPDATE CONSTRAINT products_PK;
+C. ALTER TABLE products DELETE CONSTRAINT products_PK;
+D. ALTER TABLE products TRUNCATE CONSTRAINT products_PK;
+
+
+&&&
+
+
+16. In the context of software object-oriented metrics, WMC refers to:
+
+A. Write Machine Code
+B. Whole Method Complexity
+C. Waste Method Concern
+D.* Weighted Methods per Class
+
+
+&&&
+
+
+17. Which of the following is NOT an internal sorting method?
+
+A. Selection-Sort
+B. Insertion-Sort
+C. Bubble-Sort
+D.* Merge-Sort
+
+
+&&&
+
+
+18. The process of finding and resolving of defects that prevent correct operation of
+computer software or a system is called:
+
+A. Prototyping
+B.* Debugging
+C. Analysis & Design
+D. Requirements Capturing
+
+
+&&&
+
+
+20. Table purchase has as its foreign key the primary key of table clients. Which of the
+following actions is allowed when using the default setting of the MySQL server:
+
+A. Create a purchase for a new client that is not contained in the table clients
+B. Delete a client who has made a purchase from the table clients
+C. Change the value of the primary key of table clients
+D.* Find the purchases that correspond to an existing client
+
+
+&&&
+
+
+23. Consider a function int square(int z), which returns z multiplied by itself.
+Which of the following are reasonable assertions within unit tests for this
+function?
+
+A.* assertEquals(square(-2), 4)
+B. assertEquals(square("four"), "sixteen")
+C. assertEquals(square(25), 5)
+D. assertsFunction(square)
+
+
+&&&
+
+
+25. Assume you want to test software for which you lack the source code.
+Which would be the MOST SUITABLE testing method in this case?
+
+A.* Black box testing
+B. Code review
+C. Unit testing
+D. Static analysis
+
+
+&&&
+
+
+26. A function maps three numbers in the range 0-255 that represent colors in the
+red-green-blue space into three numbers in the same range that represent colors
+in the cyan-magenta-yellow space. Numbers outside the allowed range are
+clipped to the nearest number within the range.
+Select the testing strategy that is most likely to be effective.
+
+A. Test 1000 randomly chosen combinations of numbers within the range
+B. Test 1000 randomly chosen combinations of integers
+C. Test all combinations of all numbers within the range
+D.* Test all combinations of numbers at 0, -1, 1, 128, 254, 255, 256
+
+
+&&&
+
+
+29. What is an SQL injection?
+
+A. A two-way encryption process that uses the same key for both encryption and
+decryption of your message
+B. An algorithm that takes an arbitrary block of data and returns a fixed-size
+string, the (cryptographic) hash value, such that any (accidental or intentional)
+change to the data will change the hash value
+C.* A common attack vector that uses malicious SQL code for backend database
+manipulation to access information that was not intended to be displayed
+D. One of the least common web hacking techniques that uses HTML code
+
+
+&&&
+
+
+31. Consider the list below:
+1. There is no need to wait for the DOM to be initialized before accessing it
+2. JavaScript can be used to modify existing DOM elements
+3. JavaScript can be used to create new DOM elements
+4. JavaScript cannot change the title of the current page
+Which of these statements about the DOM are TRUE?
+
+A. 1 and 2
+B.* 2 and 3
+C. 1 and 4
+D. 3 and 4
+
+
+&&&
+
+
+32. How would you assign number 160 to a JavaScript variable named hgt?
+
+A.* var hgt;
+hgt = 160;
+B. var hgt;
+document.getElementById(" hgt ").innerHTML = `60;
+C. <p hgt ="160">
+D. </p> <p id="hgt">
+</p>
+// hgt = 160;
+
+
+&&&
+
+
+33. _______________ restructures code and improves internal structure and design.
+
+A. Unit Testing
+B. Requirements analysis
+C. Analysis
+D.* Refactoring
+
+
+&&&
+
+
+34. Consider the list below:
+
+1. jQuery allows DOM manipulation
+2. Running $('a').on('click', function () {alert('asd');}) will work also for a elements
+that does not exist right now and will be created later
+3. jQuery is not JavaScript
+4. $.ajax() is a shortcut method provided by jQuery, instead of using
+XMLHttpRequest
+
+Which of the following statements about jQuery are TRUE?
+A. 1 and 2
+B. 2 and 3
+C.* 1 and 4
+D. 3 and 4
+
+
+&&&
+
+
+37. Consider the list below:
+1. A blog
+2. A simple static website
+3. A web application where the DOM changes very often
+In which of the cases mentioned above, does it make sense to use React?
+
+A. 1 only
+B. 2 only
+C.* 3 only
+D. 1 and 2
+
+
+&&&
+
+
+38. _________ is an extension of ____________, where we can also use HTML syntax.
+
+A.* JSX / JavaScript
+B. JavaScript / JSX
+C. React / JSX
+D. JavaScript / React
+
+
+&&&
+
+
+39. One of the activities of static software testing is:
+
+A. Stress testing
+B.* Code reviews
+C. Unit testing
+D. Beta testing
+
+
+&&&
+
+
+40. In databases, a(n) ____________ returns all rows when there is a match in one of
+the tables.
+
+A. Inner join
+B.* Full join
+C. Left join
+D. Right join
+
+
+&&&
+
+
+41. Which of the following sentences in regards to empathy, as a phase of Design
+Thinking, is INCORRECT?
+
+A. A tool to help understand a targeted persona.
+B. A tool to help understand programmers’ needs.
+C. Can carry out new research to fill in gaps regarding user understanding.
+D.* Acts as the centerpiece of a software-centered design process.
+
+
+&&&
+
+
+43. Consider the following activity:
+At the end of a Sprint, the team holds two events: the Sprint Review and the Sprint
+Retrospective.
+Which software development methodology uses such an activity?
+
+A. Waterfall
+B. Rapid Application Development.
+C. Prototyping
+D.* Scrum
+
+
+&&&
+
+
+46. Which code would insert a background image onto the website named
+myimage.jpg?
+
+A.* <body style="background-image:url('myimage.jpg')">
+B. <img src="https://www.afdemp.org/images/'myimage.jpg" alt="afdemp.org">
+C. <a href="myimage.jpg">
+D. <img src="https://www.afdemp.org/images/logo.jpg" alt="afdemp.org">
+
+
+&&&
+
+
+48. The UNIQUE constraint:
+
+A.* Identifies the primary key in a database table
+B. Identifies the foreign key in a database table
+C. Identifies the index in a database table
+D. Uniquely identifies each record in a database table
+
+
+&&&
+
+
+50. Which jQuery method is used to perform an asynchronous HTTP request?
+
+A. jQuery.ajaxAsync()
+B.* jQuery.ajax()
+C. jQuery.ajaxSetup()
+D. jQuery.Setupajax()
+
+

@@ -13,15 +13,9 @@ optional.add_argument("-a", "--answer", dest = "answer", default = False, help="
 args = parser.parse_args()
 
 
-def GetSplitString():
-    splitCharacter = args.splitcharacter
-    return splitCharacter
 
-def Answer():
-    return args.answer
 
-def ReadFile(str):
-    filename = args.file
+def ReadFile(filename, str):
     file = open(filename, "r")
     contents = file.read().split(str)
     return contents
@@ -69,6 +63,8 @@ def Ask(contents, showAnswer):
 
 
 if "__main__" == __name__:
-    splitCharacter = GetSplitString()
-    contents = ReadFile(splitCharacter)
-    Ask(contents, Answer())
+    filename = args.file
+    splitCharacter = args.splitcharacter
+    showAnswer = args.answer
+    contents = ReadFile(filename, splitCharacter)
+    Ask(contents, showAnswer)
